@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Dhaiyaan Cassim Fisheries — fresh and frozen seafood in Mayfair. From the ocean to your plate.">
+<title>Dhaiyaan Cassim Fisheries | Fresh & Frozen Seafood</title>
+<style>
+:root{--navy:#061f4a;--blue:#16a9e6;--red:#d91f2b;--yellow:#ffd52e;--light:#f4f9fc;--ink:#10233d;--muted:#617086}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;color:var(--ink);line-height:1.6}a{text-decoration:none;color:inherit}.wrap{width:min(1160px,92%);margin:auto}
+.top{background:var(--navy);color:#fff;padding:9px 0;font-size:14px}.top .wrap{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.top a{font-weight:bold;color:#fff}
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #e5ebf1}.nav{height:82px;display:flex;align-items:center;justify-content:space-between}.logo{width:225px;border-radius:7px}.links{display:flex;gap:25px;align-items:center;font-weight:bold;color:var(--navy)}.links a:hover{color:var(--blue)}.call{background:var(--red)!important;color:#fff!important;padding:11px 17px;border-radius:30px}.menu{display:none;background:var(--navy);color:white;border:0;border-radius:8px;padding:10px 13px;font-size:20px}
+.hero{min-height:620px;display:flex;align-items:center;background:linear-gradient(105deg,rgba(6,31,74,.97),rgba(6,31,74,.7),rgba(6,31,74,.22)),url('assets/fresh-fish.jpg') center/cover}.hero-content{color:#fff;padding:90px 0;max-width:820px}.eyebrow{display:inline-block;background:rgba(22,169,230,.2);border:1px solid rgba(255,255,255,.3);padding:8px 14px;border-radius:30px;text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:bold}.hero h1{font-family:Georgia,serif;font-size:clamp(48px,7vw,92px);line-height:.98;margin:22px 0 18px}.hero h1 span{color:var(--yellow)}.tag{font-size:20px;font-weight:bold;max-width:680px}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{padding:14px 20px;border-radius:30px;font-weight:bold;display:inline-block}.primary{background:var(--red);color:#fff}.secondary{background:#fff;color:var(--navy)}.outline{border:2px solid #fff;color:#fff}
+.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:-35px;position:relative}.quick div{background:#fff;padding:22px;border-radius:16px;box-shadow:0 12px 35px #061f4a20;border-top:4px solid var(--blue)}.quick div:nth-child(2){border-color:var(--yellow)}.quick div:nth-child(3){border-color:var(--red)}.quick strong{display:block;color:var(--navy)}.quick span{font-size:14px;color:var(--muted)}
+section{padding:90px 0}.light{background:var(--light)}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.photo{overflow:hidden;border-radius:22px;box-shadow:0 18px 45px #061f4a20}.photo img{width:100%;aspect-ratio:4/3;object-fit:cover}.kicker{color:var(--red);font-size:12px;font-weight:bold;letter-spacing:2px;text-transform:uppercase}h2{font-family:Georgia,serif;font-size:clamp(38px,5vw,62px);line-height:1.05;color:var(--navy);margin:10px 0 15px}.lead{color:var(--muted);font-size:17px}
+.features{display:grid;gap:13px;margin-top:25px}.feature{background:#fff;padding:16px;border-radius:14px;display:flex;gap:13px;box-shadow:0 7px 24px #061f4a0d}.icon{width:38px;height:38px;border-radius:11px;background:#dff5ff;display:grid;place-items:center;flex:none}
+.seafood{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.item{border:1px solid #e1e8ef;border-radius:17px;padding:19px;min-height:125px;display:flex;flex-direction:column;justify-content:space-between;transition:.2s}.item:hover{transform:translateY(-3px);box-shadow:0 14px 30px #061f4a14}.item b{color:var(--navy)}.item small{color:var(--muted)}.availability{margin-top:25px;background:#dff5ff;border-left:5px solid var(--blue);padding:17px;border-radius:13px;color:var(--navy)}
+.cta{background:linear-gradient(135deg,var(--navy),#0b3977);color:#fff;text-align:center}.cta h2{color:#fff}.cta p{max-width:700px;margin:0 auto;color:#dbe8f6}.cta .buttons{justify-content:center}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.card{background:#fff;border-radius:20px;padding:28px;box-shadow:0 10px 30px #061f4a0c}.light .card{background:#fff}.card h3{color:var(--navy);font-size:24px}.row{padding:12px 0;border-bottom:1px solid #edf1f5}.row:last-child{border:0}.row b{display:block;color:var(--navy)}.row a{color:var(--red);font-weight:bold}.hours{width:100%;border-collapse:collapse}.hours td{padding:8px 0;border-bottom:1px solid #edf1f5;vertical-align:top}.hours td:first-child{font-weight:bold;color:var(--navy)}.closed{color:var(--red);font-weight:bold}
+footer{background:#041735;color:#b9c9dc;padding:34px 0}.footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer b{color:white}.float{position:fixed;right:18px;bottom:18px;background:var(--red);color:#fff;padding:13px 18px;border-radius:30px;font-weight:bold;box-shadow:0 10px 25px #d91f2b55;z-index:30}
+@media(max-width:850px){.links{display:none;position:absolute;top:82px;left:0;right:0;background:white;padding:20px 4%;flex-direction:column;align-items:stretch}.links.open{display:flex}.menu{display:block}.quick,.grid2,.contact-grid{grid-template-columns:1fr}.seafood{grid-template-columns:repeat(2,1fr)}.hero{min-height:590px}}
+@media(max-width:500px){.logo{width:185px}.top .wrap{justify-content:center;text-align:center}.hero h1{font-size:52px}.seafood{gap:9px}.item{padding:14px;min-height:110px}section{padding:70px 0}.float{left:18px;right:18px;text-align:center}}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap"><span>Fresh & Frozen Seafood • Mayfair</span><span><a href="tel:0626841017">062 684 1017</a> / <a href="tel:0827013001">082 701 3001</a></span></div></div>
+
+<header><div class="wrap nav">
+<a href="#home"><img class="logo" src="assets/logo.jpg" alt="Dhaiyaan Cassim Fisheries logo"></a>
+<button class="menu" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
+<nav class="links">
+<a href="#home">Home</a><a href="#about">About</a><a href="#seafood">Our Seafood</a><a href="#visit">Visit Us</a><a class="call" href="tel:0626841017">Call Now</a>
+</nav>
+</div></header>
+
+<main>
+<section class="hero" id="home"><div class="wrap hero-content">
+<div class="eyebrow">Fresh seafood in Mayfair</div>
+<h1>From the <span>Ocean</span> to Your Plate.</h1>
+<p class="tag">DHAIYAAN CASSIM FISHERIES — fresh and frozen seafood with a focus on wild-caught fish.</p>
+<div class="buttons">
+<a class="btn primary" href="tel:0626841017">📞 Call 062 684 1017</a>
+<a class="btn secondary" target="_blank" href="https://www.google.com/maps/search/?api=1&query=157%208th%20Avenue%20Mayfair">📍 Get Directions</a>
+<a class="btn outline" href="#seafood">🐟 Explore Seafood</a>
+</div></div></section>
+
+<div class="wrap quick">
+<div><strong>Fresh Fish 3–5 Times a Week</strong><span>Fresh arrivals depend on weather and catches.</span></div>
+<div><strong>Wild-Caught Focus</strong><span>We keep wild-caught fish and no farmed fish.</span></div>
+<div><strong>Convenient Mayfair Location</strong><span>157 8th Avenue, next to Shoprite car park entrance.</span></div>
+</div>
+
+<section class="light" id="about"><div class="wrap grid2">
+<div class="photo"><img src="assets/fresh-fish.jpg" alt="Fresh fish at Dhaiyaan Cassim Fisheries"></div>
+<div><div class="kicker">Fresh from the catch</div><h2>Seafood you can see is seafood you can trust.</h2>
+<p class="lead">We specialize mostly in fresh line fish while keeping many other seafood products. Fresh stock changes with weather conditions and what the sea brings in.</p>
+<div class="features">
+<div class="feature"><div class="icon">🐟</div><div><b>Fresh line fish</b><br><span>Wide selection when catches and conditions allow.</span></div></div>
+<div class="feature"><div class="icon">🌊</div><div><b>Wild-caught</b><br><span>Our focus is wild-caught fish — no farmed fish.</span></div></div>
+<div class="feature"><div class="icon">🦐</div><div><b>More than fish</b><br><span>Prawns, crab, crayfish and other seafood are also available.</span></div></div>
+</div></div></div></section>
+
+<section id="seafood"><div class="wrap">
+<div class="kicker">Our seafood</div><h2>What's on the counter?</h2><p class="lead">A selection of seafood we keep. Availability changes with fresh catches and stock.</p>
+<div class="seafood" style="margin-top:35px">
+<div class="item">🐟<b>Rockcod</b><small>Fresh fish</small></div><div class="item">🐟<b>Musselcracker</b><small>Fresh fish</small></div>
+<div class="item">🐟<b>Stumpnose</b><small>Fresh fish</small></div><div class="item">🐟<b>Red Snapper</b><small>Fresh fish</small></div>
+<div class="item">🐟<b>Pink Steenbras</b><small>Fresh fish</small></div><div class="item">🐟<b>Fresh Hake</b><small>Fresh fish</small></div>
+<div class="item">🐟<b>Kingklip</b><small>Fresh fish</small></div><div class="item">🐟<b>Norwegian Salmon</b><small>Seafood</small></div>
+<div class="item">🐟<b>Kabeljou</b><small>Fresh fish</small></div><div class="item">🐟<b>Cape Salmon</b><small>Fresh fish</small></div>
+<div class="item">🐟<b>Singers</b><small>Fresh fish</small></div><div class="item">🐟<b>Soldiers</b><small>Fresh fish</small></div>
+<div class="item">🐟<b>Reds & Silvers</b><small>Fresh fish</small></div><div class="item">🦐<b>Prawns</b><small>Seafood</small></div>
+<div class="item">🦀<b>Crab</b><small>Seafood</small></div><div class="item">🦞<b>Crayfish</b><small>Seafood</small></div>
+</div>
+<div class="availability"><b>Looking for something specific?</b> Call us to check what's fresh and available today.</div>
+</div></section>
+
+<section class="cta"><div class="wrap"><div class="kicker" style="color:#ffd52e">Come taste the difference</div><h2>Fresh seafood starts with a good catch.</h2><p>Visit us in Mayfair or call ahead to ask about today's fresh fish and seafood selection.</p><div class="buttons"><a class="btn primary" href="tel:0626841017">📞 Call the Shop</a><a class="btn secondary" target="_blank" href="https://www.google.com/maps/search/?api=1&query=157%208th%20Avenue%20Mayfair">📍 Find Us on Maps</a></div></div></section>
+
+<section class="light" id="visit"><div class="wrap"><div class="kicker">Visit or call</div><h2>Come see us in Mayfair.</h2><p class="lead">157 8th Avenue, Mayfair — next to the Shoprite car park entrance.</p>
+<div class="contact-grid" style="margin-top:35px">
+<div class="card"><h3>Contact & Location</h3><div class="row"><b>Address</b>157 8th Avenue, Mayfair<br>Next to Shoprite car park entrance</div><div class="row"><b>Phone</b><a href="tel:0626841017">062 684 1017</a><br><a href="tel:0827013001">082 701 3001</a></div><div class="row"><b>Directions</b><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=157%208th%20Avenue%20Mayfair">Open Google Maps →</a></div></div>
+<div class="card"><h3>Opening Hours</h3><table class="hours">
+<tr><td>Monday</td><td>8:15 AM – 5:30 PM</td></tr><tr><td>Tuesday</td><td>8:15 AM – 5:30 PM</td></tr><tr><td>Wednesday</td><td>8:15 AM – 5:30 PM</td></tr><tr><td>Thursday</td><td>8:15 AM – 5:30 PM</td></tr><tr><td>Friday</td><td>8:15 AM – 12:30 PM<br>1:30 PM – 5:30 PM</td></tr><tr><td>Saturday</td><td>8:00 AM – 5:00 PM</td></tr><tr><td>Sunday</td><td class="closed">Closed</td></tr>
+</table></div></div></div></section>
+</main>
+
+<footer><div class="wrap footer"><div><b>DHAIYAAN CASSIM FISHERIES</b><br>FROM THE OCEAN TO YOUR PLATE</div><div>Fresh & Frozen Seafood • Mayfair</div></div></footer>
+<a class="float" href="tel:0626841017">📞 Call Us</a>
+<script>
+document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.links').classList.remove('open')));
+</script>
+</body></html>
